@@ -1,0 +1,32 @@
+{
+  "name": "http-guard",
+  "version": "0.1.0",
+  "description": "Resilient fetch for rate-limited APIs: timeouts, retries with backoff and jitter, Retry-After, per-host circuit breaker with a critical-path bypass. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": ["fetch", "retry", "backoff", "circuit-breaker", "rate-limit", "http", "resilience", "trading"],
+  "author": "Sergio Gómez",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/sergiogoqui-cpu/http-guard.git" },
+  "bugs": { "url": "https://github.com/sergiogoqui-cpu/http-guard/issues" },
+  "homepage": "https://github.com/sergiogoqui-cpu/http-guard#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
