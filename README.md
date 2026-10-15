@@ -1,5 +1,6 @@
 # http-guard
 
+[![CI](https://github.com/sergiogoqui-cpu/http-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/sergiogoqui-cpu/http-guard/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
